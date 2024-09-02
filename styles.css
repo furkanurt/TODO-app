@@ -1,9 +1,9 @@
 :root {
     --white: #fff;
     --light-grey: #f5f6f7;
-    --dark-grey: #0a0a23;
-    --yellow: #f1be32;
-    --golden-yellow: #feac32;
+    --dark-grey: #090925;
+    --yellow: #270e8b;
+    --golden-yellow: #689ff8;
   }
   
   *,
@@ -15,7 +15,10 @@
   }
   
   body {
-    background-color: var(--dark-grey);
+    background: linear-gradient(#6565f6, #4247d8, #1d0e54);
+    font-family: "Lexend Deca";
+    font-optical-sizing: auto;
+    height: 700px;
   }
   
   main {
@@ -27,7 +30,7 @@
   
   h1 {
     color: var(--light-grey);
-    margin: 20px 0 40px 0;
+    margin: 20px 0 30px 0;
   }
   
   .todo-app {
@@ -49,20 +52,24 @@
     margin: 10px;
     color: var(--dark-grey);
     background-color: var(--golden-yellow);
-    background-image: linear-gradient(#fecc4c, #ffac33);
+    background-image: linear-gradient(#4c52fe, #62a7f7);
     border-color: var(--golden-yellow);
     border-width: 3px;
+    transition: 2s ease-in-out;
   }
   
   .btn:hover {
-    background-image: linear-gradient(#ffcc4c, #f89808);
+    background-image: linear-gradient(#7c84fa, #ffffff);
   }
   
   .large-btn {
+    font-family: "Lexend Deca";
     width: 80%;
     font-size: 1.2rem;
     align-self: center;
+    padding: 2px;
     justify-self: center;
+    
   }
   
   .close-task-form-btn {
@@ -181,4 +188,13 @@
       padding: 5px;
       margin-bottom: 20px;
     }
+  }
+  .mark {
+    border-top: 2px;
+  
+    border-color: white;
+    height: 18px;
+    display: flex;
+    color: white;
+    margin-top: 20px;
   }
